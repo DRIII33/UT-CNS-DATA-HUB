@@ -1,0 +1,2 @@
+CREATE OR REPLACE VIEW `driiiportfolio.compliance.vw_student_enrollment_safe` AS SELECT s.student_id, s.major, e.grade, e.academic_year FROM `driiiportfolio.analytics.fact_enrollment` e JOIN `driiiportfolio.analytics.dim_student` s ON e.student_key = s.student_key;
+CREATE OR REPLACE VIEW `driiiportfolio.analytics.v_enrollment_summary` AS SELECT major, academic_year, count(*) as total_enrollments, avg(grade_point) as avg_gpa FROM `driiiportfolio.compliance.vw_student_enrollment_safe` GROUP BY 1, 2;

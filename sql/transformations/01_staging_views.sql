@@ -1,0 +1,1 @@
+CREATE OR REPLACE VIEW `driiiportfolio.staging.v_students_cleaned` AS SELECT student_id, cohort_year, UPPER(major) as major, ROUND(gpa, 2) as gpa, enrollment_status, date_enrolled FROM `driiiportfolio.staging.students`;

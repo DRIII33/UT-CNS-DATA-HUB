@@ -1,0 +1,3 @@
+CREATE OR REPLACE TABLE `driiiportfolio.analytics.dim_student` AS SELECT ROW_NUMBER() OVER() as student_key, student_id, major, gpa, TRUE as dw_is_current FROM `driiiportfolio.staging.students`;
+CREATE OR REPLACE TABLE `driiiportfolio.analytics.dim_faculty` AS SELECT ROW_NUMBER() OVER() as faculty_key, faculty_id, rank, department, TRUE as dw_is_current FROM `driiiportfolio.staging.faculty`;
+CREATE OR REPLACE TABLE `driiiportfolio.analytics.dim_date` AS SELECT DISTINCT CAST(FORMAT_DATE('%Y%m%d', CAST(date_enrolled AS DATE)) AS INT64) as date_key, CAST(date_enrolled AS DATE) as calendar_date, cohort_year as academic_year FROM `driiiportfolio.staging.students`;
