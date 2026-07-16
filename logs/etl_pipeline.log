@@ -1,0 +1,586 @@
+2026-07-16 21:55:38,516 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 21:55:38,517 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 21:55:38,517 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 21:55:38,517 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_215538
+2026-07-16 21:55:38,517 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 21:55:38,517 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 21:55:38,517 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 21:55:38,517 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 21:55:38,517 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 21:55:38,522 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 21:55:38,523 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    df_students = self.generate_students()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 21:55:38,524 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 21:55:38,524 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 21:55:38,524 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 21:55:38,524 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 21:55:38,524 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    df_students = self.generate_students()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 21:55:38,524 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 21:55:38,525 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_215538.json
+2026-07-16 22:00:21,216 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:00:21,220 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:00:21,224 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:00:21,226 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_220021
+2026-07-16 22:00:21,228 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:00:21,230 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:00:21,233 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:00:21,235 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:00:21,238 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:00:21,252 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:00:21,257 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    df_students = self.generate_students()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:00:21,260 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:00:21,263 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:00:21,265 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:00:21,267 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:00:21,269 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    df_students = self.generate_students()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:00:21,273 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:00:21,275 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_220021.json
+2026-07-16 22:09:23,863 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:09:23,866 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:09:23,869 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:09:23,872 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_220923
+2026-07-16 22:09:23,874 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:09:23,876 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:09:23,880 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:09:23,883 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:09:23,884 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:09:23,895 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:09:23,897 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:09:23,901 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:09:23,902 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:09:23,904 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:09:23,905 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:09:23,909 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:09:23,910 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:09:23,913 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_220923.json
+2026-07-16 22:09:38,764 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:09:38,767 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:09:38,770 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:09:38,771 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_220938
+2026-07-16 22:09:38,772 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:09:38,774 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:09:38,776 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:09:38,777 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:09:38,779 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:09:38,789 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:09:38,792 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:09:38,794 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:09:38,796 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:09:38,797 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:09:38,799 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:09:38,801 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:09:38,803 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:09:38,804 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_220938.json
+2026-07-16 22:09:52,657 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:09:52,661 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:09:52,664 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:09:52,667 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_220952
+2026-07-16 22:09:52,670 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:09:52,673 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:09:52,675 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:09:52,676 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:09:52,678 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:09:52,687 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:09:52,692 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:09:52,697 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:09:52,700 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:09:52,703 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:09:52,706 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:09:52,711 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:09:52,713 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:09:52,716 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_220952.json
+2026-07-16 22:10:06,031 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:10:06,034 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:10:06,036 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:10:06,038 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_221006
+2026-07-16 22:10:06,040 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:10:06,042 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:10:06,044 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:10:06,045 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:10:06,047 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:10:06,059 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:10:06,061 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:10:06,065 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:10:06,066 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:10:06,068 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:10:06,069 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:10:06,072 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:10:06,075 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:10:06,077 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_221006.json
+2026-07-16 22:10:33,025 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:10:33,027 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:10:33,028 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:10:33,029 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_221033
+2026-07-16 22:10:33,031 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:10:33,033 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:10:33,035 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:10:33,037 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:10:33,039 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:10:33,053 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:10:33,058 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:10:33,062 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:10:33,065 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:10:33,068 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:10:33,070 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:10:33,072 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:10:33,076 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:10:33,079 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_221033.json
+2026-07-16 22:11:01,163 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:11:01,165 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:11:01,168 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:11:01,170 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_221101
+2026-07-16 22:11:01,171 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:11:01,173 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:11:01,175 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:11:01,177 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:11:01,180 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:11:01,194 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:11:01,196 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:11:01,200 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:11:01,201 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:11:01,204 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:11:01,205 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:11:01,208 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:11:01,209 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:11:01,212 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_221101.json
+2026-07-16 22:11:29,040 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:11:29,044 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:11:29,047 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:11:29,050 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_221129
+2026-07-16 22:11:29,051 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:11:29,054 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:11:29,056 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:11:29,059 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:11:29,061 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:11:29,078 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:11:29,084 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:11:29,088 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:11:29,091 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:11:29,093 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:11:29,095 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:11:29,098 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:11:29,101 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:11:29,103 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_221129.json
+2026-07-16 22:11:46,732 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:11:46,735 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:11:46,738 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:11:46,741 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_221146
+2026-07-16 22:11:46,742 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:11:46,745 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:11:46,749 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:11:46,751 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:11:46,753 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:11:46,763 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:11:46,766 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:11:46,771 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:11:46,772 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:11:46,775 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:11:46,777 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:11:46,782 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:11:46,786 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:11:46,788 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_221146.json
+2026-07-16 22:12:15,513 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:12:15,516 - ETL_Pipeline - INFO - 
+======================================================================
+2026-07-16 22:12:15,519 - ETL_Pipeline - INFO - UT CNS DATA HUB - ETL PIPELINE START
+2026-07-16 22:12:15,521 - ETL_Pipeline - INFO - Execution ID: ETL_20260716_221215
+2026-07-16 22:12:15,524 - ETL_Pipeline - INFO - ======================================================================
+
+2026-07-16 22:12:15,527 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:12:15,530 - ETL_Pipeline - INFO - PHASE 1: DATA EXTRACTION
+2026-07-16 22:12:15,532 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:12:15,534 - ETL_Pipeline - INFO - Generating synthetic data...
+2026-07-16 22:12:15,543 - ETL_Pipeline - ERROR - ✗ Extraction failed: high <= 0
+2026-07-16 22:12:15,547 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:12:15,550 - ETL_Pipeline - ERROR - 
+======================================================================
+2026-07-16 22:12:15,552 - ETL_Pipeline - ERROR - ETL PIPELINE FAILED
+2026-07-16 22:12:15,555 - ETL_Pipeline - ERROR - ======================================================================
+2026-07-16 22:12:15,557 - ETL_Pipeline - ERROR - Error: high <= 0
+2026-07-16 22:12:15,561 - ETL_Pipeline - ERROR - Traceback (most recent call last):
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 483, in run
+    data = self.extract_data()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/etl_pipeline.py", line 127, in extract_data
+    data = self.data_generator.generate_all()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 537, in generate_all
+    # Generate dimension data first
+                  ^^^^^^^^^^^^^^^^^^
+  File "/content/UT-CNS-DATA-HUB/python/data_generators.py", line 136, in generate_students
+    credits_completed = np.random.randint(
+                        ^^^^^^^^^^^^^^^^^^
+  File "numpy/random/mtrand.pyx", line 798, in numpy.random.mtrand.RandomState.randint
+  File "numpy/random/_bounded_integers.pyx", line 1334, in numpy.random._bounded_integers._rand_int64
+ValueError: high <= 0
+
+2026-07-16 22:12:15,562 - ETL_Pipeline - ERROR - ======================================================================
+
+2026-07-16 22:12:15,564 - ETL_Pipeline - INFO - Execution log saved: logs/execution_log_ETL_20260716_221215.json
+2026-07-16 22:13:37,967 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:13:38,470 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:13:38,473 - ETL_Pipeline - INFO - PHASE 3: LOAD TO STAGING LAYER
+2026-07-16 22:13:38,475 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:13:38,477 - ETL_Pipeline - INFO - Loading students to driiiportfolio.staging.students...
+2026-07-16 22:13:38,817 - ETL_Pipeline - WARNING - Attempt 1/3 failed for students. Retrying in 1s... Error: 400 POST https://bigquery.googleapis.com/upload/bigquery/v2/projects/driiiportfolio/jobs?uploadType=multipart: Only CSV imports may specify leading rows to skip.
+2026-07-16 22:13:39,972 - ETL_Pipeline - WARNING - Attempt 2/3 failed for students. Retrying in 2s... Error: 400 POST https://bigquery.googleapis.com/upload/bigquery/v2/projects/driiiportfolio/jobs?uploadType=multipart: Only CSV imports may specify leading rows to skip.
+2026-07-16 22:13:42,109 - ETL_Pipeline - ERROR - ✗ Failed to load students: 400 POST https://bigquery.googleapis.com/upload/bigquery/v2/projects/driiiportfolio/jobs?uploadType=multipart: Only CSV imports may specify leading rows to skip.
+2026-07-16 22:14:41,810 - ETL_Pipeline - INFO - ETL Pipeline initialized for project: driiiportfolio
+2026-07-16 22:15:03,437 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:15:03,442 - ETL_Pipeline - INFO - PHASE 4: TRANSFORMATIONS (STAGING TO ANALYTICS)
+2026-07-16 22:15:03,445 - ETL_Pipeline - INFO - ======================================================================
+2026-07-16 22:15:03,448 - ETL_Pipeline - INFO - Executing: Staging Views...
+2026-07-16 22:15:03,450 - ETL_Pipeline - WARNING - SQL file not found: sql/transformations/01_staging_views.sql
+2026-07-16 22:15:03,454 - ETL_Pipeline - INFO - Skipping transformation (SQL file not yet in repository)
+2026-07-16 22:15:03,457 - ETL_Pipeline - INFO - Executing: Dimension Tables...
+2026-07-16 22:15:03,460 - ETL_Pipeline - WARNING - SQL file not found: sql/transformations/02_dim_tables.sql
+2026-07-16 22:15:03,462 - ETL_Pipeline - INFO - Skipping transformation (SQL file not yet in repository)
+2026-07-16 22:15:03,463 - ETL_Pipeline - INFO - Executing: Fact Tables...
+2026-07-16 22:15:03,466 - ETL_Pipeline - WARNING - SQL file not found: sql/transformations/03_fact_tables.sql
+2026-07-16 22:15:03,469 - ETL_Pipeline - INFO - Skipping transformation (SQL file not yet in repository)
+2026-07-16 22:15:03,471 - ETL_Pipeline - INFO - Executing: Aggregate Views...
+2026-07-16 22:15:03,474 - ETL_Pipeline - WARNING - SQL file not found: sql/transformations/04_metrics_views.sql
+2026-07-16 22:15:03,475 - ETL_Pipeline - INFO - Skipping transformation (SQL file not yet in repository)
+2026-07-16 22:15:03,476 - ETL_Pipeline - INFO - ✓ Transformations complete: 4 executed
